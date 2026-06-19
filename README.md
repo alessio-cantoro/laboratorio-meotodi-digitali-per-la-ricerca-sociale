@@ -2,7 +2,7 @@
 
 Questo repository contiene il progetto di ricerca e analisi dati sviluppato per il **[Laboratorio Metodi digitali per la ricerca sociale](https://www.didattica-cps.unito.it/do/storicocorsi.pl/Show?_id=mzpm_2223)** (A.A. 2023/2024). L'obiettivo dello studio è analizzare il comportamento, il sentiment e le tematiche emergenti all'interno della community di *Breaking Italy*, focalizzandosi in particolare sui commenti degli utenti a quattro video-interviste realizzate con noti giornalisti italiani: Francesco Costa, Giulia Pompili, Cecilia Sala e Giovanni Floris.
 
-## 🎯 Obiettivi del Progetto
+## Obiettivi del Progetto
 
 * **Data Scraping:** Estrarre programmaticamente i commenti da YouTube utilizzando le API ufficiali e gestire i limiti di quota tramite loop condizionali.
 * **Text Analytics & NLP:** Pulire ed elaborare i testi in linguaggio naturale per estrarre strutture grammaticali rilevanti (Sostantivi e Aggettivi) e calcolare metriche di ricchezza lessicale.
@@ -20,7 +20,7 @@ Il progetto è stato interamente sviluppato in **R**, sfruttando un approccio in
 * **`ggplot2` & `dplyr`**: Manipolazione dei dataset ed esportazione dei grafici di frequenza.
 * **`writexl` & `openxlsx`**: Esportazione automatizzata dei report semantici in formato Excel per l'analisi qualitativa.
 
-## 📈 Flusso di Lavoro dell'Analisi
+## Flusso di Lavoro dell'Analisi
 
 1. **Estrazione Dati (YouTube API):** Autenticazione OAuth, estrazione delle metriche del canale e download temporizzato (per evitare il superamento dei limiti di richiesta delle API di Google) dei commenti legati ai video target.
 2. **Pre-processing & Normalizzazione:** Sostituzione delle forme declinate con radici convenzionali (es. *divers@*) e identificazione statistica delle locuzioni polirematiche (*multiwords* come "Breaking Italy", "Francesco Costa").
@@ -29,7 +29,7 @@ Il progetto è stato interamente sviluppato in **R**, sfruttando un approccio in
 5. **Co-occorrenze & Network delle Parole:** Analisi delle parole adiacenti (tramite *skip-gram*) e delle parole co-presenti nella stessa frase. Generazione di grafi di rete semantici.
 6. **Analisi KWIC (Keyword in Context):** Estrazione automatizzata di finestre di testo (7 parole prima e dopo) attorno a concetti chiave (*giornalismo*, *chiacchierata*, *Italia*) esportate in Excel per validare l'interpretazione sociologica.
 
-## 📁 Struttura del Repository
+## Struttura del Repository
 
 * `analisi_breaking_italy.R`: Lo script R completo, ottimizzato e commentato, contenente l'intero workflow (dallo scraping ai grafi di rete).
 * `IstruzioniR.pdf`: Guida di laboratorio passo-passo con la spiegazione metodologica delle funzioni utilizzate.
